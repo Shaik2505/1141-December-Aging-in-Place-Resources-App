@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "9aa3",
+      "name": "Shareef",
+      "email": "shaikshareef7225@gmail.com",
+      "password": "Ayub@123"
+    },
+    {
+      "id": "8501",
+      "name": "shiva",
+      "email": "shaik@gmail.com",
+      "password": "Ayub@123"
+    },
+    {
+      "id": "41db",
+      "name": "sai",
+      "email": "saikshareef7225@gmail.com",
+      "password": "Ayub@123"
+    },
+    {
+      "id": "7d5b",
+      "name": "Rajeshwari",
+      "email": "Rajeshwari7225@gmail.com",
+      "password": "Ayub@123"
+    },
+    {
+      "id": "fc7a",
+      "name": "SHIVA PRASAD CHAPPA",
+      "email": "a@gmail.com",
+      "password": "Abc123!@#"
+    },
+    {
+      "id": "0b60",
+      "name": "shiva prasad chappa",
+      "email": "shiva1@gmail.com",
+      "password": "Abc123!@#"
+    }
+  ]
+}
