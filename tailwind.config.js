@@ -5,17 +5,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#4CAF50",        // A soft green to represent health and well-being (primary brand color)
-        secondary: "#1976D2",      // A calming blue for secondary elements like buttons or links
+        primary: "#134E4A",        // A soft green to represent health and well-being (primary brand color)
+        secondary: "#34D399",      // A calming blue for secondary elements like buttons or links
         accent: "#FF9800",         // A warm accent color for highlighting important elements (calls to action)
-        background: "#FAFAFA",     // Light grey background for the main content area (soft on eyes)
+        background: "#F3F4F6",     // Light grey background for the main content area (soft on eyes)
         text: "#333333",           // Dark grey text for readability
         onHover: "#0288D1",        // A darker blue for hover states to create contrast
       
-        darkPrimary: "#81C784",    // Lighter green for dark mode (providing softer contrast while maintaining brand consistency)
+        darkPrimary: "#008080",    // Lighter green for dark mode (providing softer contrast while maintaining brand consistency)
         darkSecondary: "#90CAF9",  // Light blue for dark mode (calming, easy on eyes)
         darkAccent: "#FFB74D",     // A softer warm accent in dark mode
-        darkBackground: "#121212", // Very dark background for dark mode (reduces eye strain in low-light environments)
+        darkBackground: "#444444", // Very dark background for dark mode (reduces eye strain in low-light environments)
         darkText: "#E0E0E0",       // Light text color for dark mode (provides high contrast for readability)
         darkOnHover: "#FF8C00",    // Bright accent color on hover in dark mode (for focus)
       }

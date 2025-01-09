@@ -11,30 +11,36 @@ const NavLinks = ({ onLinkClick }) => {
     navigate("/", { replace: true });
   };
 
-  const baseClasses =
-    "text-white block md:inline-block hover:text-gray-200 transition duration-300";
+  const handleLinkClick = () => {
+    onLinkClick();
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
+  };
 
+  const baseClasses =
+    "text-white text-xs block md:inline-block hover:text-gray-200 transition duration-300";
   return (
     <>
-      <Link to="home" onClick={onLinkClick} className={baseClasses}>
+      <Link to="home" onClick={handleLinkClick} className={baseClasses}>
         Home
       </Link>
-      <Link to="about" onClick={onLinkClick} className={baseClasses}>
-        About
+      <Link to="resources" onClick={handleLinkClick} className={baseClasses}>
+        Resources
       </Link>
-      <Link to="contactUs" onClick={onLinkClick} className={baseClasses}>
-        Contact
+      <Link to="health-monitoring" onClick={handleLinkClick} className={baseClasses}>
+        Health Monitoring
       </Link>
-      <Link to="profile" onClick={onLinkClick} className={baseClasses}>
+      <Link to="appointments" onClick={handleLinkClick} className={baseClasses}>
+        Appointments
+      </Link>
+      <Link to="profile" onClick={handleLinkClick} className={baseClasses}>
         Profile
       </Link>
-
       {isAuthenticated && (
         <Link
           to="/"
           onClick={(e) => {
             e.preventDefault();
-            onLinkClick();
+            handleLinkClick();
             handleLogout();
           }}
           className={baseClasses}

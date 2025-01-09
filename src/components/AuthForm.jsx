@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { validateSignUp, validateSignIn } from '../utils/validation';
 import FormInputField from './FormInputField'; // Adjust the path as necessary
+import { useNavigate } from 'react-router-dom';
 
-const AuthForm = ({ isSignUp, handleAuth, updateUserData }) => {
+const AuthForm = ({ isSignUp, handleAuth }) => {
   const initialFormData = {
     name: '',
     email: '',
@@ -12,6 +12,7 @@ const AuthForm = ({ isSignUp, handleAuth, updateUserData }) => {
 
   const [formData, setFormData] = useState(initialFormData);
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedFormData = localStorage.getItem('formData');
@@ -28,26 +29,8 @@ const AuthForm = ({ isSignUp, handleAuth, updateUserData }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const validationErrors = isSignUp
-      ? validateSignUp(
-          formData.name,
-          formData.email,
-          formData.password,
-          formData.confirmPassword,
-        )
-      : validateSignIn(formData.email, formData.password);
-
-    if (Object.keys(validationErrors).length) {
-      setErrors(validationErrors);
-      return;
-    }
-
     handleAuth(formData, setErrors);
-    updateUserData({
-      name: formData.name,
-      email: formData.email,
-    });
+    navigate("/body/home");
   };
 
   return (

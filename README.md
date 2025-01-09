@@ -23,8 +23,8 @@ For the navigation links, you'll need to keep it clear and straightforward. Here
    - **Purpose**: Provides access to a summary of all available features and key sections of the app.
 2. **Resources** (Link to Resource Libraries)
 
-   - **Purpose**: A comprehensive page for accessing resources on various topics (home modifications, healthcare services, etc.).
-   - **Dropdown options**:
+   - **Purpose**: A comprehensive page for accessing resources on various topics
+     (home modifications, healthcare services, etc.).
      - Categories (Home Modifications, Healthcare, Wellness, Financial Planning, etc.)
      - Search bar/filter options for easy resource discovery.
 
